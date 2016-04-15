@@ -463,7 +463,7 @@ function Bigquery(options) {
     insertAll: function(params, callback) {
       var parameters = {
         options: {
-          url: 'https://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll',
+          url: 'http://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll',
           method: 'POST',
           gzip: true
         },
