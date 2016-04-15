@@ -86,8 +86,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId'],
@@ -116,8 +115,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets',
-          method: 'POST',
-          gzip: true
+          method: 'POST'
         },
         params: params,
         requiredParams: ['projectId'],
@@ -148,8 +146,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId'],
@@ -179,8 +176,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}',
-          method: 'PATCH',
-          gzip: true
+          method: 'PATCH'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId'],
@@ -210,8 +206,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}',
-          method: 'PUT',
-          gzip: true
+          method: 'PUT'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId'],
@@ -244,8 +239,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/project/{projectId}/jobs/{jobId}/cancel',
-          method: 'POST',
-          gzip: true
+          method: 'POST'
         },
         params: params,
         requiredParams: ['projectId', 'jobId'],
@@ -274,8 +268,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/jobs/{jobId}',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId', 'jobId'],
@@ -308,8 +301,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/queries/{jobId}',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId', 'jobId'],
@@ -341,8 +333,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/jobs',
-          method: 'POST',
-          gzip: true
+          method: 'POST'
         },
         params: params,
         mediaUrl: 'https://www.googleapis.com/upload/bigquery/v2/projects/{projectId}/jobs',
@@ -376,8 +367,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/jobs',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId'],
@@ -406,8 +396,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/queries',
-          method: 'POST',
-          gzip: true
+          method: 'POST'
         },
         params: params,
         requiredParams: ['projectId'],
@@ -440,8 +429,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: [],
@@ -475,7 +463,7 @@ function Bigquery(options) {
     insertAll: function(params, callback) {
       var parameters = {
         options: {
-          url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll',
+          url: 'https://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll',
           method: 'POST',
           gzip: true
         },
@@ -510,8 +498,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/data',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId', 'tableId'],
@@ -545,8 +532,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}',
-          method: 'DELETE',
-          gzip: true
+          method: 'DELETE'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId', 'tableId'],
@@ -576,8 +562,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId', 'tableId'],
@@ -607,8 +592,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables',
-          method: 'POST',
-          gzip: true
+          method: 'POST'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId'],
@@ -639,8 +623,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables',
-          method: 'GET',
-          gzip: true
+          method: 'GET'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId'],
@@ -671,8 +654,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}',
-          method: 'PATCH',
-          gzip: true
+          method: 'PATCH'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId', 'tableId'],
@@ -703,8 +685,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}',
-          method: 'PUT',
-          gzip: true
+          method: 'PUT'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId', 'tableId'],
