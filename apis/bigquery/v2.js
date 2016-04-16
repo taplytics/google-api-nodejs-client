@@ -464,14 +464,19 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'http://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll',
-          method: 'POST',
-          gzip: true
+          method: 'POST'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId', 'tableId'],
         pathParams: ['datasetId', 'projectId', 'tableId'],
         context: self
       };
+
+      // check for gzip param, put into parameters
+      if (params.gzip) {
+          parameters.gzip = true;
+          delete params.gzip;
+      }
 
       return createAPIRequest(parameters, callback);
     },
