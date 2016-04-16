@@ -475,8 +475,8 @@ function Bigquery(options) {
       // check for gzip param, put into parameters
       if (params.gzip) {
           parameters.gzip = true;
-          delete params.gzip;
       }
+      delete params.gzip;
 
       return createAPIRequest(parameters, callback);
     },
