@@ -463,7 +463,7 @@ function Bigquery(options) {
     insertAll: function(params, callback) {
       var parameters = {
         options: {
-          url: 'http://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll',
+          url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll',
           method: 'POST'
         },
         params: params,
@@ -475,6 +475,7 @@ function Bigquery(options) {
       // check for gzip param, put into parameters
       if (params.gzip) {
           parameters.gzip = true;
+          parameters.options.url = 'http://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll';
       }
       delete params.gzip;
 
