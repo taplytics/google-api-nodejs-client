@@ -56,8 +56,7 @@ function Bigquery(options) {
       var parameters = {
         options: {
           url: 'https://www.googleapis.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}',
-          method: 'DELETE',
-          gzip: true
+          method: 'DELETE'
         },
         params: params,
         requiredParams: ['projectId', 'datasetId'],
@@ -475,9 +474,12 @@ function Bigquery(options) {
       // check for gzip param, put into parameters
       if (params.gzip) {
           parameters.gzip = true;
+          if (params.gzipedJSON)
+            parameters.gzipedJSON = params.gzipedJSON;
           parameters.options.url = 'http://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll';
       }
       delete params.gzip;
+      delete params.gzipedJSON;
 
       return createAPIRequest(parameters, callback);
     },
