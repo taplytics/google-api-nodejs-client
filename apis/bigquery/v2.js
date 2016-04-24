@@ -476,7 +476,6 @@ function Bigquery(options) {
           parameters.gzip = true;
           if (params.gzipedJSON)
             parameters.gzipedJSON = params.gzipedJSON;
-          parameters.options.url = 'http://bq-proxy-gcp.taplytics.com/bigquery/v2/projects/{projectId}/datasets/{datasetId}/tables/{tableId}/insertAll';
       }
       delete params.gzip;
       delete params.gzipedJSON;
